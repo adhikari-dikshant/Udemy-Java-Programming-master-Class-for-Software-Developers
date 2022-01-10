@@ -9,7 +9,7 @@ public class SharedDigit {
             int secondNumberLast = secondNumber % 10;
             int secondNumberStart = secondNumber / 10;
             if (firstNumberStart == secondNumberStart || firstNumberStart == secondNumberLast || firstNumberLast == secondNumberStart
-                           || firstNumberLast == secondNumberLast) {
+                           || firstNumberLast == secondNumberLast || firstNumberStart == firstNumberLast || secondNumberLast == secondNumberLast) {
                 return true;
             } else {
                 return false;
